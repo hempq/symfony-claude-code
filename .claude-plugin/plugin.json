@@ -1,0 +1,8 @@
+{
+  "name": "symfony-claude-code",
+  "version": "1.4.0",
+  "description": "Hempq's personal Claude Code setup with 21 productivity commands and 11 specialized AI agents for Symfony, Symfony UX, and DDEV development",
+  "author": {
+    "name": "Hempq"
+  }
+}

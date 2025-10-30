@@ -1,0 +1,23 @@
+{
+  "name": "symfony-claude-code",
+  "owner": {
+    "name": "Hempq",
+    "contact": "github.com/hempq"
+  },
+  "metadata": {
+    "description": "Hempq's curated Claude Code setup for Symfony and PHP development"
+  },
+  "plugins": [
+    {
+      "name": "symfony-claude-code",
+      "source": "./",
+      "description": "Personal Claude Code configuration with 21 productivity commands and 11 specialized AI agents for Symfony, Symfony UX, and DDEV development",
+      "version": "1.4.0",
+      "author": {
+        "name": "Hempq",
+        "email": "[email protected]"
+      },
+      "tags": ["productivity", "symfony", "php", "doctrine", "symfony-ux", "ddev", "development"]
+    }
+  ]
+}
