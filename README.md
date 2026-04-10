@@ -1,192 +1,138 @@
-# Hempq's Claude Code Setup for Symfony
+# Symfony Claude Code Plugin
 
-My personal Claude Code configuration for productive Symfony development. This plugin provides **21 slash commands** and **11 specialized AI agents** to supercharge your development workflow with Symfony, Symfony UX, and DDEV.
+Claude Code plugin for Symfony development. 26 skills, 11 AI agents, output styles, and DDEV shortcuts.
 
-## Quick Install
-
-```bash
-git clone https://github.com/hempq/symfony-claude-code.git
-cd symfony-claude-code
-
-# Add as local marketplace
-/plugin marketplace add /path/to/symfony-claude-code
-
-# Install plugin
-/plugin install symfony-claude-code
-```
-
-## What's Inside
-
-### 📋 Development Commands (11)
-
-- `/new-task` - Analyze task complexity and create implementation plans
-- `/service-new` - Create Symfony services with business logic
-- `/test-new` - Create PHPUnit tests (unit, integration, functional)
-- `/dto-new` - Create DTOs with validation
-- `/event-new` - Create events with listeners or subscribers
-- `/code-explain` - Generate detailed explanations
-- `/code-optimize` - Performance optimization
-- `/code-cleanup` - Refactoring and cleanup
-- `/feature-plan` - Feature implementation planning
-- `/lint` - Linting and fixes
-- `/docs-generate` - Documentation generation
-
-### 🔌 API Commands (3)
-
-- `/api-new` - Create new API endpoints
-- `/api-test` - Test API endpoints
-- `/api-protect` - Add protection & validation
-
-### 🎨 UI Commands (4)
-
-- `/controller-new` - Create simple Symfony controllers (CRUD, API, Forms, Dashboard)
-- `/form-new` - Create Symfony forms with validation
-- `/component-new` - Create Symfony UX components (Twig, Stimulus, LiveComponents)
-- `/page-new` - Create full pages with controllers and templates
-
-### 💾 Database Commands (2)
-
-- `/entity-new` - Create Doctrine entities with validation and migrations
-- `/messenger-new` - Create Symfony Messenger handlers for async tasks
-
-### 🔒 Security Commands (1)
-
-- `/voter-new` - Create Security Voters for authorization
-
-### 🤖 Specialized AI Agents (11)
-
-**Architecture & Planning**
-- **tech-stack-researcher** - Technology choice recommendations with trade-offs
-- **system-architect** - Scalable system architecture design
-- **backend-architect** - Backend systems with data integrity & security
-- **frontend-architect** - Performant, accessible UI architecture
-- **requirements-analyst** - Transform ideas into concrete specifications
-
-**Code Quality & Performance**
-- **refactoring-expert** - Systematic refactoring and clean code
-- **performance-engineer** - Measurement-driven optimization
-- **security-engineer** - Vulnerability identification and security standards
-
-**Documentation & Research**
-- **technical-writer** - Clear, comprehensive documentation
-- **learning-guide** - Teaching programming concepts progressively
-- **deep-research-agent** - Comprehensive research with adaptive strategies
-
-## Installation
+## Install
 
 ```bash
 git clone https://github.com/hempq/symfony-claude-code.git
-cd symfony-claude-code
 
-# Add as local marketplace
+# In Claude Code:
 /plugin marketplace add /path/to/symfony-claude-code
-
-# Install plugin
 /plugin install symfony-claude-code
 ```
 
+## Skills
 
+### Development
 
-## Best For
+| Skill | Description |
+|-------|-------------|
+| `/new-task` | Analyze task complexity and create implementation plans |
+| `/service-new` | Create services with business logic |
+| `/test-new` | Create PHPUnit tests (unit, integration, functional) |
+| `/dto-new` | Create DTOs with validation |
+| `/event-new` | Create events with listeners or subscribers |
+| `/code-explain` | Explain PHP/Symfony code with diagrams |
+| `/code-optimize` | Performance optimization |
+| `/code-cleanup` | Refactoring and cleanup |
+| `/feature-plan` | Plan feature implementation |
+| `/lint` | PHP CS Fixer, PHPStan, Rector |
+| `/docs-generate` | Generate documentation |
 
-- Symfony developers
-- PHP projects with DDEV
-- Doctrine ORM users
-- Symfony UX developers
-- Full-stack PHP engineers
+### API
 
-## Command Aliases
+| Skill | Description |
+|-------|-------------|
+| `/api-new` | Create API endpoints with validation |
+| `/api-test` | Generate API functional tests |
+| `/api-protect` | Add auth, rate limiting, CORS |
 
-For faster usage, several commands have shorter aliases:
+### UI
 
-- `/api` → `/api-new`
-- `/entity` → `/entity-new`
-- `/test` → `/test-new`
-- `/svc` → `/service-new`
-- `/ctrl` → `/controller-new`
+| Skill | Description |
+|-------|-------------|
+| `/controller-new` | Create controllers (CRUD, forms, dashboard) |
+| `/form-new` | Create forms with validation |
+| `/component-new` | Create Symfony UX components (Twig, Stimulus, Live) |
+| `/page-new` | Create full pages with templates |
 
-## Usage Examples
+### Database
 
-### Planning a Feature
+| Skill | Description |
+|-------|-------------|
+| `/entity-new` | Create Doctrine entities with validation |
+| `/messenger-new` | Create Messenger handlers for async tasks |
+| `/migration` | Generate and manage Doctrine migrations |
+| `/fixture-new` | Create test data fixtures and factories |
 
-```bash
-/feature-plan
-# Then describe your feature idea
+### Symfony Internals
+
+| Skill | Description |
+|-------|-------------|
+| `/command-new` | Create console commands |
+| `/middleware-new` | Create Messenger middleware |
+| `/twig-extension-new` | Create Twig filters, functions, and tests |
+| `/voter-new` | Create Security Voters |
+
+## Agents
+
+Agents activate automatically based on context.
+
+| Agent | When to use |
+|-------|-------------|
+| tech-stack-researcher | Technology comparisons, architecture decisions |
+| system-architect | System design, component boundaries, scaling |
+| backend-architect | API design, database schemas, caching |
+| frontend-architect | Symfony UX, Stimulus, accessibility, Core Web Vitals |
+| requirements-analyst | Turn vague ideas into specs and user stories |
+| refactoring-expert | Break up large classes, apply SOLID, reduce debt |
+| performance-engineer | Profile bottlenecks, optimize queries and memory |
+| security-engineer | Audit code, threat model, OWASP compliance |
+| technical-writer | API docs, READMEs, architecture decision records |
+| learning-guide | Explain concepts, design patterns, Symfony internals |
+| deep-research-agent | Multi-source research with evidence synthesis |
+
+## Extras
+
+**Output styles** — Switch response format with `/output-style`:
+- `terse` — Code only, minimal prose
+- `tutorial` — Step-by-step educational explanations
+
+**Bin shortcuts** — Available in terminal while the plugin is active:
+
+```
+sf            → ddev exec bin/console
+phptest       → ddev exec bin/phpunit
+phpfix        → ddev exec vendor/bin/php-cs-fixer fix
+phpstan       → ddev exec vendor/bin/phpstan analyse
 ```
 
-### Creating a Controller
+**Hooks** — Automated reminders after editing PHP files and entities.
+
+## Example Workflows
 
 ```bash
-/controller-new
-# Claude will create a simple controller with routes and templates
+# Plan and scaffold a feature
+/feature-plan Shopping cart with session persistence
+
+# Entity → migration → form → controller → tests
+/entity-new Product with name, price, category
+/migration
+/form-new ProductType for the Product entity
+/controller-new Product CRUD controller
+/test-new Functional tests for ProductController
+
+# API with security
+/api-new CRUD API for blog posts with pagination
+/api-protect Add JWT authentication
+/api-test
 ```
-
-### Creating an API
-
-```bash
-/api-new
-# Claude will scaffold a complete Symfony API controller with validation and error handling
-```
-
-### Creating a Form
-
-```bash
-/form-new
-# Claude will generate a Symfony form with validation constraints
-```
-
-### Creating a Service
-
-```bash
-/service-new
-# Claude will create a service with business logic and dependencies
-```
-
-### Research Tech Choices
-
-Just ask Claude questions like:
-- "Should I use WebSockets or SSE?"
-- "How should I structure this database?"
-- "What's the best library for X?"
-
-The tech-stack-researcher agent automatically activates and provides detailed, researched answers.
-
-## Philosophy
-
-This setup emphasizes:
-- **Type Safety**: Strict PHP types and Doctrine annotations
-- **Best Practices**: Follows modern Symfony 7+ patterns
-- **Productivity**: Reduces repetitive scaffolding
-- **Research**: AI-powered tech decisions with evidence
-- **DDEV Integration**: Optimized for DDEV container workflows
 
 ## Requirements
 
-- Claude Code 2.0.13+
-- PHP 8.2+
-- Symfony 7.0+
-- DDEV (recommended for local development)
-- Works with any PHP project (optimized for Symfony + Doctrine)
+- Claude Code 2.1+
+- PHP 8.2+ / Symfony 7.0+
+- DDEV recommended
 
 ## Customization
 
-After installation, you can customize any command by editing files in `.claude/commands/` and `.claude/agents/`.
-
-## Contributing
-
-Feel free to:
-- Fork and customize for your needs
-- Submit issues or suggestions
-- Share your improvements
+Edit files in `skills/` and `agents/` to adjust any skill or agent behavior.
 
 ## License
 
-MIT - Use freely in your projects
+MIT
 
 ## Author
 
-Created by Hempq
-
----
-
-**Note**: This is my personal setup that I've refined over time. Commands are optimized for Symfony + DDEV workflows but work great with any modern PHP stack.
+Hempq — [github.com/hempq](https://github.com/hempq)
