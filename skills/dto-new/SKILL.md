@@ -10,6 +10,13 @@ Create a Data Transfer Object (DTO) with validation following best practices.
 
 $ARGUMENTS
 
+## Existing Project Context
+
+Existing DTOs:
+!`find src/Dto src/DTO -name "*.php" -type f 2>/dev/null | sort`
+
+Before generating, check existing DTOs for naming conventions and validation patterns.
+
 ## What to Generate
 
 DTOs are used to transfer data between layers without exposing entities.

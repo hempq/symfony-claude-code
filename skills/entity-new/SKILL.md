@@ -12,6 +12,13 @@ Create a Doctrine entity following best practices.
 
 $ARGUMENTS
 
+## Existing Project Context
+
+Existing entities:
+!`find src/Entity -name "*.php" -type f 2>/dev/null | sort`
+
+Before generating, check existing entities for naming conventions, base classes, and trait usage. Follow the same patterns.
+
 ## What to Generate
 
 Generate Doctrine entities from database schema or create/update database schema from entities.

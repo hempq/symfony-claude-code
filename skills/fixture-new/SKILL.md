@@ -12,6 +12,16 @@ Create Doctrine fixtures for test and seed data following best practices.
 
 $ARGUMENTS
 
+## Existing Project Context
+
+Existing entities:
+!`find src/Entity -name "*.php" -type f 2>/dev/null | sort`
+
+Existing fixtures:
+!`find src/DataFixtures -name "*.php" -type f 2>/dev/null | sort`
+
+Before generating, check existing entities for required fields and relationships.
+
 ## What to Generate
 
 Choose the fixture pattern based on requirements:

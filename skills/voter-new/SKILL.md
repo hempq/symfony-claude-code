@@ -10,6 +10,13 @@ Create a Symfony Security Voter following best practices.
 
 $ARGUMENTS
 
+## Existing Project Context
+
+Existing voters:
+!`find src/Security -name "*Voter.php" -type f 2>/dev/null | sort`
+
+Before generating, check existing voters for permission naming and attribute conventions.
+
 ## What to Generate
 
 Security Voters provide granular access control based on custom logic.

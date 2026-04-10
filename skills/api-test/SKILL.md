@@ -10,6 +10,16 @@ Generate comprehensive API tests for Symfony endpoints following PHPUnit best pr
 
 $ARGUMENTS
 
+## Existing Project Context
+
+Existing API tests:
+!`find tests -name "*ApiTest.php" -o -name "*ControllerTest.php" -type f 2>/dev/null | head -15`
+
+Existing API routes:
+!`grep -rh "#\[Route.*api" src/Controller --include="*.php" 2>/dev/null | head -10`
+
+Before generating, follow existing test patterns for assertions, fixtures, and authentication.
+
 ## Test Strategy for Symfony APIs
 
 Create practical, maintainable tests using Symfony's testing tools:

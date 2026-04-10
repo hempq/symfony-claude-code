@@ -10,6 +10,16 @@ Create a new Symfony page (controller + template) following best practices.
 
 $ARGUMENTS
 
+## Existing Project Context
+
+Existing templates:
+!`ls templates/ 2>/dev/null`
+
+Base template:
+!`head -10 templates/base.html.twig 2>/dev/null`
+
+Before generating, follow existing template structure and layout inheritance.
+
 ## What to Generate
 
 Create controller and template based on the page type:

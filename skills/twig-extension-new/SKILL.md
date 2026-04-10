@@ -11,6 +11,13 @@ Create custom Twig extensions, filters, and functions following best practices.
 
 $ARGUMENTS
 
+## Existing Project Context
+
+Existing Twig extensions:
+!`find src/Twig -name "*.php" -type f 2>/dev/null | sort`
+
+Before generating, check existing extensions to avoid duplicate filter/function names.
+
 ## What to Generate
 
 Choose the approach based on requirements. Symfony 7.0+ supports both attribute-based and traditional approaches.

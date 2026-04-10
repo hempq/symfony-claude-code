@@ -11,6 +11,13 @@ Create a Symfony service following best practices.
 
 $ARGUMENTS
 
+## Existing Project Context
+
+Existing services:
+!`find src/Service -name "*.php" -type f 2>/dev/null | sort`
+
+Before generating, check existing services for dependency injection patterns, naming conventions, and error handling style.
+
 ## What to Generate
 
 Choose the service type based on requirements:

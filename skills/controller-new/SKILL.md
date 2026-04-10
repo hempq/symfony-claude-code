@@ -11,6 +11,16 @@ Create a simple Symfony controller following best practices.
 
 $ARGUMENTS
 
+## Existing Project Context
+
+Existing controllers:
+!`find src/Controller -name "*Controller.php" -type f 2>/dev/null | sort`
+
+Existing route prefixes:
+!`grep -rh "#\[Route" src/Controller --include="*.php" 2>/dev/null | head -10`
+
+Before generating, follow existing route naming and namespace conventions.
+
 ## What to Generate
 
 Choose the controller type based on requirements:

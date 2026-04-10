@@ -10,6 +10,14 @@ Create a new Symfony Messenger message and handler for asynchronous task process
 
 $ARGUMENTS
 
+## Existing Project Context
+
+Existing messages:
+!`find src/Message -name "*.php" -type f 2>/dev/null | sort`
+!`find src/MessageHandler -name "*.php" -type f 2>/dev/null | sort`
+
+Before generating, follow existing message naming and handler patterns.
+
 ## Symfony Messenger Overview
 
 Symfony Messenger provides:

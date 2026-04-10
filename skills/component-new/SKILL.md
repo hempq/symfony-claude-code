@@ -10,6 +10,14 @@ Create a new Symfony UX component following best practices.
 
 $ARGUMENTS
 
+## Existing Project Context
+
+Existing components:
+!`find src/Twig/Components -name "*.php" -type f 2>/dev/null | sort`
+!`ls templates/components/ 2>/dev/null`
+
+Before generating, follow existing component patterns and naming.
+
 ## What to Generate
 
 Choose the appropriate component type based on requirements:

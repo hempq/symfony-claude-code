@@ -10,6 +10,13 @@ Create a Symfony form following best practices.
 
 $ARGUMENTS
 
+## Existing Project Context
+
+Existing forms:
+!`find src/Form -name "*Type.php" -type f 2>/dev/null | sort`
+
+Before generating, check existing form types for field conventions and validation patterns.
+
 ## What to Generate
 
 Create a form type with validation:

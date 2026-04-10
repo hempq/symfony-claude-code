@@ -11,6 +11,13 @@ Create a Symfony Console command following best practices.
 
 $ARGUMENTS
 
+## Existing Project Context
+
+Existing commands:
+!`find src/Command -name "*.php" -type f 2>/dev/null | sort`
+
+Before generating, check existing commands for naming prefix (e.g., app:*) and output style.
+
 ## What to Generate
 
 Choose the command pattern based on requirements:

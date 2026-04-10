@@ -11,6 +11,13 @@ Create Symfony Messenger middleware following best practices.
 
 $ARGUMENTS
 
+## Existing Project Context
+
+Existing middleware:
+!`find src/Messenger/Middleware -name "*.php" -type f 2>/dev/null | sort`
+
+Before generating, check existing middleware for ordering and naming conventions.
+
 ## What to Generate
 
 Choose the middleware pattern based on requirements:

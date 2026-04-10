@@ -10,6 +10,14 @@ Create a Symfony event with listener or subscriber following best practices.
 
 $ARGUMENTS
 
+## Existing Project Context
+
+Existing events:
+!`find src/Event -name "*Event.php" -type f 2>/dev/null | sort`
+!`find src/EventListener src/EventSubscriber -name "*.php" -type f 2>/dev/null | sort`
+
+Before generating, follow existing event naming and listener organization.
+
 ## What to Generate
 
 Choose between Event Listener (single event) or Event Subscriber (multiple events):

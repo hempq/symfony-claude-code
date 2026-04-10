@@ -13,6 +13,16 @@ Create PHPUnit tests following best practices.
 
 $ARGUMENTS
 
+## Existing Project Context
+
+Existing tests:
+!`find tests -name "*Test.php" -type f 2>/dev/null | head -20`
+
+Test config:
+!`head -15 phpunit.xml.dist 2>/dev/null || head -15 phpunit.xml 2>/dev/null`
+
+Before generating, follow existing test organization, assertion style, and naming conventions.
+
 ## What to Generate
 
 Choose the test type based on requirements:

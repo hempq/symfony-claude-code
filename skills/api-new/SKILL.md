@@ -11,6 +11,16 @@ Create a new Symfony API endpoint following modern best practices for solo devel
 
 API Endpoint: $ARGUMENTS
 
+## Existing Project Context
+
+Existing API controllers:
+!`find src/Controller -path "*Api*" -name "*Controller.php" -type f 2>/dev/null | sort`
+
+Existing API routes:
+!`grep -rh "#\[Route.*api" src/Controller --include="*.php" 2>/dev/null | head -10`
+
+Before generating, follow existing API response format, error handling, and route naming.
+
 ## Implementation Guidelines
 
 ### 1. **Symfony 7+ Controllers**

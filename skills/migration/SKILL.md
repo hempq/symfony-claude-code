@@ -12,6 +12,13 @@ Generate and manage Doctrine migrations following best practices.
 
 $ARGUMENTS
 
+## Existing Project Context
+
+Recent migrations:
+!`ls -t migrations/*.php 2>/dev/null | head -5`
+
+Before generating, check recent migrations for naming patterns and SQL conventions.
+
 ## What to Generate
 
 Choose the migration approach based on requirements:
