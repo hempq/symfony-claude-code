@@ -401,7 +401,7 @@ class ProductController extends AbstractController
 
         if (!$limiter->consume(1)->isAccepted()) {
             throw new TooManyRequestsHttpException(
-                retry After: $limiter->consume(1)->getRetryAfter()->getTimestamp()
+                retryAfter: $limiter->consume(1)->getRetryAfter()->getTimestamp()
             );
         }
 
