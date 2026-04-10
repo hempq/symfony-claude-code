@@ -5,8 +5,8 @@
 .vscode/
 .idea/
 
-# Local settings (users should not commit these)
-.claude/settings.local.json
+# Claude Code local state
+.claude/
 
 # Data
 /data/
