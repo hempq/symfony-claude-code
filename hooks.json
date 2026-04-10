@@ -17,6 +17,42 @@
         "file_glob": "src/Entity/**/*.php"
       },
       "command": "echo 'Reminder: Run ddev exec bin/console make:migration to generate a migration for entity changes'"
+    },
+    {
+      "event": "PostToolUse",
+      "type": "command",
+      "matcher": {
+        "tool_name": "Edit",
+        "file_glob": "src/Entity/**/*.php"
+      },
+      "command": "echo 'Reminder: Run ddev exec bin/console make:migration after entity changes'"
+    },
+    {
+      "event": "PostToolUse",
+      "type": "command",
+      "matcher": {
+        "tool_name": "Write",
+        "file_glob": "templates/**/*.twig"
+      },
+      "command": "echo 'Tip: Run ddev exec bin/console cache:clear if template changes are not visible'"
+    },
+    {
+      "event": "PostToolUse",
+      "type": "command",
+      "matcher": {
+        "tool_name": "Edit",
+        "file_glob": "config/**/*.yaml"
+      },
+      "command": "echo 'Tip: Run ddev exec bin/console cache:clear after config changes'"
+    },
+    {
+      "event": "PostToolUse",
+      "type": "command",
+      "matcher": {
+        "tool_name": "Write",
+        "file_glob": "config/**/*.yaml"
+      },
+      "command": "echo 'Tip: Run ddev exec bin/console cache:clear after config changes'"
     }
   ]
 }
