@@ -7,3 +7,6 @@
 
 # Local settings (users should not commit these)
 .claude/settings.local.json
+
+# Data
+/data/
