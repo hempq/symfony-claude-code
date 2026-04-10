@@ -1,0 +1,14 @@
+{
+  "lspServers": {
+    "intelephense": {
+      "command": "npx",
+      "args": ["-y", "intelephense", "--stdio"],
+      "languages": ["php"],
+      "initializationOptions": {
+        "clearCache": false,
+        "globalStoragePath": "/tmp/intelephense",
+        "storagePath": "/tmp/intelephense"
+      }
+    }
+  }
+}

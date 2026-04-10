@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Shortcut for PHPStan via DDEV
+# Usage: phpstan, phpstan src/Service/, phpstan analyse src tests
+ddev exec vendor/bin/phpstan analyse "$@"

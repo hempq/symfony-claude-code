@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Shortcut for Symfony console commands via DDEV
+# Usage: sf cache:clear, sf debug:router, sf make:migration
+ddev exec bin/console "$@"

@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Shortcut for PHPUnit via DDEV
+# Usage: phptest, phptest tests/Service/ProductServiceTest.php, phptest --filter testCreate
+ddev exec bin/phpunit "$@"

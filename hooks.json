@@ -1,0 +1,22 @@
+{
+  "hooks": [
+    {
+      "event": "PostToolUse",
+      "type": "command",
+      "matcher": {
+        "tool_name": "Edit",
+        "file_glob": "src/**/*.php"
+      },
+      "command": "echo 'Tip: Run /lint to check code quality after editing PHP files'"
+    },
+    {
+      "event": "PostToolUse",
+      "type": "command",
+      "matcher": {
+        "tool_name": "Write",
+        "file_glob": "src/Entity/**/*.php"
+      },
+      "command": "echo 'Reminder: Run ddev exec bin/console make:migration to generate a migration for entity changes'"
+    }
+  ]
+}

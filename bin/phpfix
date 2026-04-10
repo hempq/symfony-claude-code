@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Shortcut for PHP CS Fixer via DDEV
+# Usage: phpfix, phpfix src/Service/, phpfix --dry-run
+ddev exec vendor/bin/php-cs-fixer fix "$@"
