@@ -1,5 +1,5 @@
 ---
-description: Create a new Symfony controller and template with modern best practices
+description: Create full pages with controller, route, and Twig template (list, detail, form, dashboard)
 model: claude-sonnet-4-6
 effort: medium
 ---

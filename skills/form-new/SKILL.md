@@ -1,5 +1,5 @@
 ---
-description: Create a Symfony form with validation
+description: Create form types with entity binding, nested forms, and custom validation
 model: claude-sonnet-4-6
 effort: high
 ---

@@ -1,5 +1,5 @@
 ---
-description: Run linting and fix code quality issues
+description: Run PHP CS Fixer, PHPStan, and Rector to fix code quality issues
 model: claude-sonnet-4-6
 effort: low
 allowed-tools: [Bash, Read, Edit, Write, Grep, Glob]

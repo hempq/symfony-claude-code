@@ -1,5 +1,5 @@
 ---
-description: Generate and manage Doctrine migrations
+description: Generate, run, and rollback Doctrine migrations including data migrations
 model: claude-sonnet-4-6
 effort: medium
 allowed-tools: [Bash, Read, Edit, Write, Grep, Glob]

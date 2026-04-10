@@ -1,5 +1,5 @@
 ---
-description: Refactor and clean up code following best practices
+description: Extract services from controllers, apply SOLID, modernize to PHP 8.2+ patterns
 model: claude-sonnet-4-6
 effort: medium
 ---
