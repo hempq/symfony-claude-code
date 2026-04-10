@@ -282,6 +282,8 @@ class FeatureVoter extends Voter
 ```php
 <?php
 
+declare(strict_types=1);
+
 namespace App\Controller;
 
 use App\Entity\Product;
@@ -410,6 +412,8 @@ public function manage(Product $product): Response
 ```php
 <?php
 
+declare(strict_types=1);
+
 namespace App\Service;
 
 use App\Entity\Product;
@@ -515,6 +519,8 @@ class ProductVoterTest extends TestCase
 ### **Integration Test**
 ```php
 <?php
+
+declare(strict_types=1);
 
 namespace App\Tests\Controller;
 

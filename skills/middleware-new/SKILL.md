@@ -525,7 +525,6 @@ Stamps carry metadata through the middleware pipeline:
 
 ```php
 <?php
-// src/Messenger/Stamp/PriorityStamp.php
 
 declare(strict_types=1);
 

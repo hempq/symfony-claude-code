@@ -65,6 +65,8 @@ readonly class CreateProductRequest
 ```php
 <?php
 
+declare(strict_types=1);
+
 namespace App\Controller;
 
 use App\Dto\CreateProductRequest;
@@ -216,6 +218,8 @@ class ContactFormData
 **Form Type:**
 ```php
 <?php
+
+declare(strict_types=1);
 
 namespace App\Form;
 
@@ -501,6 +505,8 @@ readonly class ProductListResponse
 ```php
 <?php
 
+declare(strict_types=1);
+
 namespace App\Validator;
 
 use Symfony\Component\Validator\Constraint;
@@ -515,6 +521,8 @@ class UniqueEmail extends Constraint
 **Validator:**
 ```php
 <?php
+
+declare(strict_types=1);
 
 namespace App\Validator;
 
@@ -563,6 +571,8 @@ readonly class CreateUserRequest
 ### **Validation Test**
 ```php
 <?php
+
+declare(strict_types=1);
 
 namespace App\Tests\Dto;
 

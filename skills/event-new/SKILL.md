@@ -108,6 +108,8 @@ class UserRegisteredListener
 ```php
 <?php
 
+declare(strict_types=1);
+
 namespace App\Service;
 
 use App\Entity\User;
@@ -419,6 +421,8 @@ class SecurityEventSubscriber implements EventSubscriberInterface
 ```php
 <?php
 
+declare(strict_types=1);
+
 namespace App\Event;
 
 use Symfony\Contracts\EventDispatcher\Event;
@@ -452,6 +456,8 @@ class OrderProcessingEvent extends Event
 ### **Event with Modification**
 ```php
 <?php
+
+declare(strict_types=1);
 
 namespace App\Event;
 
@@ -514,6 +520,8 @@ public static function getSubscribedEvents(): array
 ```php
 <?php
 
+declare(strict_types=1);
+
 namespace App\Tests\Service;
 
 use App\Event\UserRegisteredEvent;
@@ -544,6 +552,8 @@ class UserServiceTest extends KernelTestCase
 ### **Test Listener**
 ```php
 <?php
+
+declare(strict_types=1);
 
 namespace App\Tests\EventListener;
 

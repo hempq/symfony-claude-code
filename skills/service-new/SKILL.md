@@ -581,6 +581,8 @@ services:
 ```php
 <?php
 
+declare(strict_types=1);
+
 namespace App\Tests\Service;
 
 use App\Service\ProductService;
@@ -611,6 +613,8 @@ class ProductServiceTest extends TestCase
 ### **Integration Test**
 ```php
 <?php
+
+declare(strict_types=1);
 
 namespace App\Tests\Service;
 

@@ -402,6 +402,8 @@ ddev composer require --dev zenstruck/foundry
 
 ```php
 <?php
+
+declare(strict_types=1);
 // src/Factory/UserFactory.php
 
 declare(strict_types=1);
@@ -448,6 +450,8 @@ final class UserFactory extends PersistentProxyObjectFactory
 
 ```php
 <?php
+
+declare(strict_types=1);
 // src/Factory/ProductFactory.php
 
 declare(strict_types=1);
@@ -485,6 +489,8 @@ final class ProductFactory extends PersistentProxyObjectFactory
 
 ```php
 <?php
+
+declare(strict_types=1);
 // src/DataFixtures/AppFixtures.php
 
 declare(strict_types=1);
@@ -534,6 +540,8 @@ class AppFixtures extends Fixture
 
 ```php
 <?php
+
+declare(strict_types=1);
 
 namespace App\Tests\Service;
 
