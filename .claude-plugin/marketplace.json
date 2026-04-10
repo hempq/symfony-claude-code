@@ -1,23 +1,32 @@
 {
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
   "name": "symfony-claude-code",
   "owner": {
     "name": "Hempq",
-    "contact": "github.com/hempq"
+    "email": "[email protected]"
   },
   "metadata": {
-    "description": "Hempq's curated Claude Code setup for Symfony and PHP development"
+    "description": "Hempq's curated Claude Code setup for Symfony and PHP development",
+    "version": "1.0.0"
   },
   "plugins": [
     {
       "name": "symfony-claude-code",
       "source": "./",
-      "description": "Personal Claude Code configuration with 21 productivity commands and 11 specialized AI agents for Symfony, Symfony UX, and DDEV development",
-      "version": "1.4.0",
+      "description": "26 productivity skills, 11 specialized AI agents, 2 output styles, and 4 bin shortcuts for Symfony, Symfony UX, and DDEV development",
+      "version": "2.0.0",
       "author": {
         "name": "Hempq",
         "email": "[email protected]"
       },
-      "tags": ["productivity", "symfony", "php", "doctrine", "symfony-ux", "ddev", "development"]
+      "repository": "https://github.com/hempq/symfony-claude-code",
+      "license": "MIT",
+      "keywords": ["symfony", "php", "doctrine", "symfony-ux", "ddev", "development"],
+      "category": "development",
+      "tags": ["community-managed"],
+      "strict": true,
+      "skills": ["./skills/"],
+      "agents": ["./agents/"]
     }
   ]
 }

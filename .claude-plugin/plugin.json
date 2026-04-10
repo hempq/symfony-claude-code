@@ -1,8 +1,36 @@
 {
   "name": "symfony-claude-code",
-  "version": "1.4.0",
-  "description": "Hempq's personal Claude Code setup with 21 productivity commands and 11 specialized AI agents for Symfony, Symfony UX, and DDEV development",
+  "version": "2.0.0",
+  "description": "Hempq's personal Claude Code setup with 26 productivity skills, 11 specialized AI agents, 2 output styles, and 4 bin shortcuts for Symfony, Symfony UX, and DDEV development",
   "author": {
-    "name": "Hempq"
+    "name": "Hempq",
+    "url": "https://github.com/hempq"
+  },
+  "homepage": "https://github.com/hempq/symfony-claude-code",
+  "repository": "https://github.com/hempq/symfony-claude-code",
+  "license": "MIT",
+  "keywords": [
+    "symfony",
+    "php",
+    "doctrine",
+    "symfony-ux",
+    "ddev",
+    "productivity",
+    "development"
+  ],
+  "skills": "./skills/",
+  "agents": "./agents/",
+  "hooks": "./hooks.json",
+  "outputStyles": "./output-styles/",
+  "lspServers": "./.lsp.json",
+  "userConfig": {
+    "ddev_enabled": {
+      "description": "Whether to prefix commands with 'ddev exec' (default: true)",
+      "sensitive": false
+    },
+    "php_version": {
+      "description": "Target PHP version for generated code (8.2, 8.3, or 8.4)",
+      "sensitive": false
+    }
   }
 }
