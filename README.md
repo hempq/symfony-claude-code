@@ -1,6 +1,6 @@
 # Symfony Claude Code Plugin
 
-Claude Code plugin for Symfony development. 26 skills, 11 AI agents, output styles, and DDEV shortcuts.
+Claude Code plugin for Symfony development. 29 skills, 11 AI agents, output styles, and DDEV shortcuts.
 
 ## Install
 
@@ -64,6 +64,14 @@ git clone https://github.com/hempq/symfony-claude-code.git
 | `/middleware-new` | Create Messenger middleware |
 | `/twig-extension-new` | Create Twig filters, functions, and tests |
 | `/voter-new` | Create Security Voters |
+
+### DevOps
+
+| Skill | Description |
+|-------|-------------|
+| `/deploy` | Deployment checklist and production config |
+| `/ci-setup` | GitHub Actions or GitLab CI pipeline |
+| `/ddev-setup` | Configure DDEV with database, PHP, and services |
 
 ## Agents
 

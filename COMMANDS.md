@@ -1,6 +1,6 @@
 # Skill Reference
 
-Quick reference for all 26 skills in this plugin.
+Quick reference for all 29 skills in this plugin.
 
 ```
 /skill-name [describe what you need]
@@ -63,6 +63,16 @@ All skills generate Symfony 7+ / PHP 8.2+ code with DDEV integration.
 | Skill | What it does | Patterns |
 |-------|-------------|----------|
 | `/voter-new` | Create Security Voters | Owner-based, role-based, time-based, status-based |
+
+## Agents
+
+## DevOps
+
+| Skill | What it does | Patterns |
+|-------|-------------|----------|
+| `/deploy` | Deployment checklist and production config | Nginx, supervisor, env vars, security checklist |
+| `/ci-setup` | CI/CD pipeline configuration | GitHub Actions, GitLab CI, tests + lint + deploy |
+| `/ddev-setup` | Configure DDEV for Symfony | PHP version, database, Redis, Mailpit, Xdebug |
 
 ## Agents
 

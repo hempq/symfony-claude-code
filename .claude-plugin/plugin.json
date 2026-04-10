@@ -1,7 +1,7 @@
 {
   "name": "symfony-claude-code",
-  "version": "2.0.0",
-  "description": "Hempq's personal Claude Code setup with 26 productivity skills, 11 specialized AI agents, 2 output styles, and 4 bin shortcuts for Symfony, Symfony UX, and DDEV development",
+  "version": "2.1.0",
+  "description": "29 productivity skills, 11 specialized AI agents, 2 output styles, and 4 bin shortcuts for Symfony, Symfony UX, and DDEV development",
   "author": {
     "name": "Hempq",
     "url": "https://github.com/hempq"
