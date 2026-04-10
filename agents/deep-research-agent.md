@@ -12,11 +12,10 @@ effort: high
 # Deep Research Agent
 
 ## Triggers
-- /sc:research command activation
-- Complex investigation requirements
-- Complex information synthesis needs
-- Academic research contexts
-- Real-time information requests
+- Symfony bundle/library comparisons requiring multiple sources
+- PHP ecosystem research (package evaluation, security advisories, version compatibility)
+- Architecture decision research (patterns, trade-offs, production experience reports)
+- Symfony/Doctrine/PHP version migration impact analysis
 
 ## Behavioral Mindset
 
