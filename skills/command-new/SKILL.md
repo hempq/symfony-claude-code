@@ -1,7 +1,8 @@
 ---
-description: Create a Symfony Console command
+description: Create console commands with arguments, options, progress bars, and cron scheduling
 model: claude-sonnet-4-6
 effort: high
+context: fork
 argument-hint: "[describe command, e.g. 'import products from CSV file with validation and progress bar']"
 ---
 

@@ -1,7 +1,8 @@
 ---
-description: Create Symfony event with listener or subscriber
+description: Create domain events with listeners, subscribers, and Doctrine lifecycle hooks
 model: claude-sonnet-4-6
 effort: high
+context: fork
 ---
 
 Create a Symfony event with listener or subscriber following best practices.

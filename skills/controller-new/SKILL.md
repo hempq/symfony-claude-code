@@ -1,7 +1,8 @@
 ---
-description: Create a simple Symfony controller with routes and templates
+description: Create controllers with CRUD, forms, pagination, search, and dashboard patterns
 model: claude-sonnet-4-6
 effort: high
+context: fork
 argument-hint: "[describe controller, e.g. 'Dashboard controller with user stats and charts']"
 ---
 

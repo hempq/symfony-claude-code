@@ -2,6 +2,7 @@
 description: Create custom Twig extensions, filters, and functions
 model: claude-sonnet-4-6
 effort: high
+context: fork
 argument-hint: "[describe extension, e.g. 'price formatting filter with currency symbol and locale support']"
 ---
 

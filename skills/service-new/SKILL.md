@@ -2,6 +2,7 @@
 description: Create a Symfony service with business logic
 model: claude-sonnet-4-6
 effort: high
+context: fork
 argument-hint: "[describe service, e.g. 'Product import service with CSV parsing and validation']"
 ---
 

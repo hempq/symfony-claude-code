@@ -2,6 +2,7 @@
 description: Create PHPUnit tests for Symfony applications
 model: claude-sonnet-4-6
 effort: medium
+context: fork
 allowed-tools: [Bash, Read, Edit, Write, Grep, Glob]
 paths: ["tests/**/*.php"]
 argument-hint: "[describe what to test, e.g. 'Unit tests for ProductService create and update methods']"

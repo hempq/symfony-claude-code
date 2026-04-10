@@ -2,6 +2,7 @@
 description: Add authentication, authorization, and security to API endpoints
 model: claude-sonnet-4-6
 effort: high
+context: fork
 ---
 
 Add comprehensive security, authentication, and authorization to Symfony API endpoints.

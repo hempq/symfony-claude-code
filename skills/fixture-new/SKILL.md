@@ -2,6 +2,7 @@
 description: Create Doctrine fixtures for test and seed data
 model: claude-sonnet-4-6
 effort: high
+context: fork
 paths: ["src/DataFixtures/**/*.php"]
 argument-hint: "[describe fixtures, e.g. 'User fixtures with admin, editor, and regular users plus sample blog posts']"
 ---

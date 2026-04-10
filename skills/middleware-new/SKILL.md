@@ -1,7 +1,8 @@
 ---
-description: Create Symfony Messenger middleware
+description: Create Messenger middleware for logging, validation, transactions, and audit
 model: claude-sonnet-4-6
 effort: high
+context: fork
 argument-hint: "[describe middleware, e.g. 'logging middleware that records message processing time and outcome']"
 ---
 

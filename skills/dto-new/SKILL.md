@@ -1,7 +1,8 @@
 ---
-description: Create Data Transfer Object with validation
+description: Create request/response DTOs with Symfony validation constraints and serialization
 model: claude-sonnet-4-6
 effort: high
+context: fork
 ---
 
 Create a Data Transfer Object (DTO) with validation following best practices.
